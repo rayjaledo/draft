@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f3fffb">
+    <title>Contact - SHRCMS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <a class="logo-area" href="index.html" aria-label="SHRCMS home">
+            <img src="../image/logo2.png" alt="SHRCMS Logo" class="logo-icon">
+
+            <span class="logo-text">
+                <h2>SHRCMS</h2>
+            </span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="features.html">Features</a>
+            <a href="contact.html" class="active" aria-current="page">Contact</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="../php/login.php" class="login-btn">Login</a>
+            <a href="features.html" class="start-btn">Get Started</a>
+        </div>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-layout" aria-label="Contact information and campus clinic">
+            <div class="contact-details">
+                <p class="contact-label">GET IN TOUCH</p>
+                <h2>How can we help?</h2>
+                <p class="contact-intro">For health concerns or help using the system, contact your school’s clinic
+                    through its official channels.</p>
+
+                <article class="contact-info-card">
+                    <span class="contact-info-icon">
+    <img src="../image/location (2).png" alt="">
+</span>
+                    <div>
+                        <h3>Visit the clinic</h3>
+                        <p>Contact or visit the campus clinic for in-person assistance.</p>
+                    </div>
+                </article>
+
+                <article class="contact-info-card">
+                    <span class="contact-info-icon">
+    <img src="../image/clock.png" alt="">
+</span>
+                    <div>
+                        <h3>Clinic hours</h3>
+                        <p>Check with your school for current clinic hours and availability.</p>
+                    </div>
+                </article>
+
+                <article class="contact-info-card">
+                    <span class="contact-info-icon">
+    <img src="../image/email.png" alt="">
+</span>
+                    <div>
+                        <h3>Need urgent help?</h3>
+                        <p>For emergencies, contact local emergency services or go to the nearest emergency department.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <article class="clinic-card">
+                <div class="clinic-card-photo">
+    <img src="../image/campus-clinic.jpg"
+         alt="Campus clinic">
+</div>
+                <div class="clinic-card-content">
+                    <h2>Campus Clinic</h2>
+                    <p class="clinic-card-location">Visit your school’s campus clinic for in-person assistance.</p>
+                    <h3>CLINIC OPERATING HOURS</h3>
+                    <p>Check with your school for current clinic hours and availability.</p>
+                    <a class="clinic-directions"
+                        href="https://www.google.com/maps/dir/?api=1&amp;destination=Campus+Clinic"
+                        target="_blank" rel="noopener noreferrer">
+                        Get Directions
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <form class="contact-form" id="contact-form">
+            <p class="contact-label">SEND A MESSAGE</p>
+            <h2>How can we assist you?</h2>
+            <p class="form-note">Please do not include private medical or sensitive personal information.</p>
+
+            <label for="contact-name">Your name</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Enter your name"
+                required>
+
+            <label for="contact-email">Email address</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"
+                required>
+
+            <label for="contact-subject">Subject</label>
+            <select id="contact-subject" name="subject" required>
+                <option value="" selected disabled>Select a topic</option>
+                <option>General question</option>
+                <option>SHRCMS support</option>
+                <option>Clinic services</option>
+                <option>Other</option>
+            </select>
+
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Tell us how we can help"
+                required></textarea>
+
+            <button class="contact-submit" type="submit">Send message <span aria-hidden="true">→</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <p class="form-disclaimer">This static demo does not send messages yet. Connect a school-approved email
+                or form service to receive submissions.</p>
+        </form>
+    </main>
+
+    <footer class="site-footer" id="footer">
+
+        <div class="footer-inner">
+
+
+            <!-- LOGO AND TITLE -->
+            <!-- LOGO AND TITLE -->
+            <div class="footer-brand">
+                <a href="index.html" class="footer-brand-title">
+                    <span class="footer-brand-text">
+                        <strong>SHRCMS</strong>
+                    </span>
+
+                    <img src="../image/logo2.png" alt="SHRCMS Logo" class="footer-brand-logo">
+                </a>
+            </div>
+
+
+            <!-- SERVICES -->
+            <div class="footer-column">
+                <h3>Services</h3>
+                <a href="features.html">Student Health Records</a>
+                <a href="features.html">Clinic Consultations</a>
+                <a href="features.html">Health Documentation</a>
+                <a href="features.html">Health Reports</a>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="features.html">Features</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="contact.html">Help &amp; Support</a>
+            </div>
+
+            <!-- CONTACT INFORMATION -->
+            <div class="footer-column footer-contact">
+                <h3>Contact Information</h3>
+
+                <p>
+                    <span class="footer-contact-icon">
+                <img src="../image/email.png" alt="">
+            </span>
+                    <a href="mailto:clinic@school.edu.ph">
+                        clinic@school.edu.ph
+                    </a>
+                </p>
+
+                <p>
+                   <span class="footer-contact-icon">
+                <img src="../image/location (2).png" alt="">
+            </span>
+                    <span>Campus Clinic</span>
+                </p>
+
+                <p>
+                   <span class="footer-contact-icon">
+                <img src="../image/contact.png" alt="">
+            </span>
+                    <a href="contact.html">Contact the Clinic</a>
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1">
+        ↑
+    </button>
+    <div class="social-float">
+        <div class="social-links" id="social-links" aria-hidden="true">
+            <a href="https://www.facebook.com/rayj.aledo.1" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook" tabindex="-1">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.4 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H7.5V13h2.7v8h3.2Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/ray_xxyz09/" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram" tabindex="-1">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="social-icon-dot" cx="17.7" cy="6.7" r="1"/></svg>
+            </a>
+            <a href="mailto:rayjaledo60@gmail.com" aria-label="Email" tabindex="-1">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+            </a>
+        </div>
+        <button class="social-toggle" type="button" aria-label="Open social links" aria-expanded="false"
+            aria-controls="social-links">
+            <svg class="social-chat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5h14a2.5 2.5 0 0 1 2.5 2.5v9a2.5 2.5 0 0 1-2.5 2.5H9l-5.5 3v-15A2.5 2.5 0 0 1 5 4.5Z"/></svg>
+            <svg class="social-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+    </div>
+    <script src="../js/back-to-top.js" defer></script>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            document.getElementById('form-status').textContent =
+                'Thanks for your message. This demo form is not connected to a clinic inbox yet.';
+        });
+    </script>
+</body>
+
+</html>
