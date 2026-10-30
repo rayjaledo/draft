@@ -332,25 +332,29 @@
 
                 <p>
                     <span class="footer-contact-icon">
-                <img src="../image/email.png" alt="">
-            </span>
-                    <a href="mailto:clinic@school.edu.ph">
-                        clinic@school.edu.ph
+                        <img src="../image/footer-email-icon.svg" alt="">
+                    </span>
+                    <a href="mailto:info@shrcmshealth.ph">
+                        info@shrcmshealth.ph
                     </a>
                 </p>
 
                 <p>
                     <span class="footer-contact-icon">
-                <img src="../image/location (2).png" alt="">
-            </span>
-                    <span>Campus Clinic</span>
+                        <img src="../image/facebook-icon.svg" alt="">
+                    </span>
+                    <a href="https://www.facebook.com/SHRCMSClinicPH" target="_blank" rel="noopener noreferrer">
+                        SHRCMSClinicPH
+                    </a>
                 </p>
 
                 <p>
                     <span class="footer-contact-icon">
-                <img src="../image/contact.png" alt="">
-            </span>
-                    <a href="contact.html">Contact the Clinic</a>
+                        <img src="../image/instagram-icon.svg" alt="">
+                    </span>
+                    <a href="https://www.instagram.com/shrcmshealth.ph/" target="_blank" rel="noopener noreferrer">
+                        shrcmshealth.ph
+                    </a>
                 </p>
             </div>
 
@@ -361,27 +365,48 @@
     <button class="back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1">
         ↑
     </button>
-    <div class="social-float">
-        <div class="social-links" id="social-links" aria-hidden="true">
-            <a href="https://www.facebook.com/rayj.aledo.1" target="_blank" rel="noopener noreferrer"
-                aria-label="Facebook" tabindex="-1">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.4 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H7.5V13h2.7v8h3.2Z"/></svg>
-            </a>
-            <a href="https://www.instagram.com/ray_xxyz09/" target="_blank" rel="noopener noreferrer"
-                aria-label="Instagram" tabindex="-1">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="social-icon-dot" cx="17.7" cy="6.7" r="1"/></svg>
-            </a>
-            <a href="mailto:rayjaledo60@gmail.com" aria-label="Email" tabindex="-1">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
-            </a>
-        </div>
-        <button class="social-toggle" type="button" aria-label="Open social links" aria-expanded="false"
-            aria-controls="social-links">
-            <svg class="social-chat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5h14a2.5 2.5 0 0 1 2.5 2.5v9a2.5 2.5 0 0 1-2.5 2.5H9l-5.5 3v-15A2.5 2.5 0 0 1 5 4.5Z"/></svg>
-            <svg class="social-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+    <div class="click-to-call-widget">
+        <section class="click-to-call-panel" id="click-to-call-panel" role="dialog"
+            aria-labelledby="click-to-call-title" aria-hidden="true" hidden>
+            <header class="click-to-call-header">
+                <span class="click-to-call-header-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M5 4.5h14a2.5 2.5 0 0 1 2.5 2.5v9a2.5 2.5 0 0 1-2.5 2.5H9l-5.5 3v-15A2.5 2.5 0 0 1 5 4.5Z"/></svg>
+                </span>
+                <h2 id="click-to-call-title">SHRCMS Click2Message</h2>
+                <button class="click-to-call-close" type="button" aria-label="Close call form">×</button>
+            </header>
+            <div class="click-to-call-form">
+                <div class="click-to-call-name-fields">
+                    <div>
+                        <label for="call-first-name">FIRST NAME <span aria-hidden="true">*</span></label>
+                        <input id="call-first-name" name="firstName" type="text" autocomplete="given-name"
+                            placeholder="Juan" required>
+                    </div>
+                    <div>
+                        <label for="call-last-name">LAST NAME <span aria-hidden="true">*</span></label>
+                        <input id="call-last-name" name="lastName" type="text" autocomplete="family-name"
+                            placeholder="dela Cruz" required>
+                    </div>
+                </div>
+                <label for="call-mobile-number">MOBILE NUMBER <span aria-hidden="true">*</span></label>
+                <input id="call-mobile-number" name="mobileNumber" type="tel" autocomplete="tel"
+                    placeholder="09XXXXXXXXX" required>
+                <label for="call-email">EMAIL ADDRESS</label>
+                <input id="call-email" name="email" type="email" autocomplete="email"
+                    placeholder="name@example.com">
+                <label for="call-concern">CONCERN / REMARKS</label>
+                <textarea id="call-concern" name="concern" rows="3"
+                    placeholder="Briefly describe your concern..."></textarea>
+                <a class="click-to-call-message" href="mailto:clinic@school.edu.ph">Send a Message</a>
+            </div>
+        </section>
+        <button class="click-to-call-toggle" type="button" aria-label="Open Click2Message form"
+            aria-expanded="false" aria-controls="click-to-call-panel">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5h14a2.5 2.5 0 0 1 2.5 2.5v9a2.5 2.5 0 0 1-2.5 2.5H9l-5.5 3v-15A2.5 2.5 0 0 1 5 4.5Z"/></svg>
         </button>
     </div>
     <script src="../js/back-to-top.js" defer></script>
+    <script src="../js/click-to-call.js" defer></script>
 
 </body>
 
